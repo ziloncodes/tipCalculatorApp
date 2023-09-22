@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="Tip calculator app - Frontend Mentor">
+  <meta name="keywords" content="Tip calculator app, Frontend Mentor, ziloncodes">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <img class="logo" id="logo" src="images/logo.svg" alt="logo">
+
+  <!--container-->
+  <div class="container">
+    <div>
+      <!--Bill-->
+      <label for="Bill">Bill</label>
+      <input class="input" id="Bill" name="input" type="number" placeholder="0" value="">
+
+      <!--select tip-->
+      <label for="Custom">Select Tip %</label>
+      <div class="percent">
+        <button class="button" value="5">5%</button>
+        <button class="button" value="10">10%</button>
+        <button class="button" value="15">15%</button>
+        <button class="button" value="25">25%</button>
+        <button class="button" value="50">50%</button>
+        <input class="input" id="Custom" name="input" type="number" placeholder="Custom" value="">
+      </div>
+
+      <!--number of people-->
+      <label for="People">Number of People</label>
+      <p id="error-message" class="error-message"></p>
+      <input class="input" id="People" name="input" type="number" placeholder="0" value="">
+    </div>
+
+    <!--Tip Div-->
+    <div class="tip">
+      <div class="tip-amount">
+        <div class="sub-tip">
+          <p class="heading">Tip Amount</p>
+          <p class="per">/ person</p>
+        </div>
+        <div class="sum">
+          <span class="dollar">$</span><span id="result-tip">0.00</span>
+        </div>
+      </div>
+
+      <div class="total">
+        <div class="sub-tip">
+          <p class="heading">Total</p>
+          <p class="per">/ person</p>
+        </div>
+        <div class="sum">
+          <span class="dollar">$</span><span id="result-total">0.00</span>
+        </div>
+      </div>
+
+      <button class="reset" disabled>RESET</button>
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/ziloncodes">ziloncodes</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
